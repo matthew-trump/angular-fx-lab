@@ -1,0 +1,8 @@
+<input type="button" value=":enter" (click)="enter()">
+<input type="button" value=":leave" (click)="leave()">
+<div @showing (@showing.done)="animationEvent($event)" *ngIf="showing">
+  <h1>
+    Hello
+  </h1>
+  <h2>Hello</h2>
+</div>
