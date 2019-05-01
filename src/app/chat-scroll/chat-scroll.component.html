@@ -1,0 +1,6 @@
+<button mat-raised-button (click)="addItem()">add item</button>
+<button mat-raised-button (click)="clear()">clear</button>
+<!-- condition in [scrollTop] prevents ExpressionChangedAfterItHasBeenCheckedError after clear() -->
+<div class="items" #scrollMe [scrollTop]="items.length>0 ? scrollMe.scrollHeight : 0">
+  <div class="item" *ngFor="let item of items">{{item}}</div>
+</div>
