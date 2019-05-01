@@ -1,0 +1,14 @@
+<h2>Headline</h2>
+<style>
+  h3.subhead {
+    color: '#ffff00';
+  }
+</style>
+<ng-container *ngIf="(customCssVars$|async) as customCssVars">
+  <div [css-vars]="customCssVars">
+    CSS Variables <span class="red">work if this red.</span>
+    and if <span class="green">this is green</span>
+  </div>
+</ng-container>
+<input type="button" (click)="changeCustomVariable()" value="change">
+<h3 class="subhead">Subhead</h3>

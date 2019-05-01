@@ -1,0 +1,22 @@
+div{
+    --red-color: red;
+    span.red{
+        display: inline-block;
+        color: var(--red-color)
+    }
+    span.green{
+        display: inline-block;
+        color: var(--green-color);
+    }
+    &:before{
+        content : 'foo';
+        color: var(--green-color);
+    }
+}
+
+h2{
+    text-decoration: underline;
+}
+h2::before{
+    color: green;
+}
