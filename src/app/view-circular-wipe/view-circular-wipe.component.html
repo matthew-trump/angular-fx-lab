@@ -1,0 +1,7 @@
+<button (click)="step()">step</button> <span>{{index}}</span>
+
+<ng-container *ngIf="stage">
+  <div class="wrapper" [ngStyle]="{'background-color':stage.background}">
+    <circular-wipe [diameter]="stage.diameter" [color]="stage.color" [duration]="stage.duration"></circular-wipe>
+  </div>
+</ng-container>
