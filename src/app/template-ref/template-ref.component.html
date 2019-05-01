@@ -1,0 +1,5 @@
+<template-ref-tlist [items]="items">
+  <ng-template let-item="$implicit" let-i="index">
+    <li>[{{ i }}] Hello: {{ item.title }}</li>
+  </ng-template>
+</template-ref-tlist>
