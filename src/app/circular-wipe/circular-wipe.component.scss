@@ -1,0 +1,9 @@
+div{
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  transition: all cubic-bezier(.17,.67,0,.97);
+}
